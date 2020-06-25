@@ -1,0 +1,68 @@
+body {
+  background: #fff;
+}
+
+main {
+  margin-top: 104px;
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.navbar {
+  background-color: white;
+  -webkit-box-shadow: 0 0 30px #00000012;
+          box-shadow: 0 0 30px #00000012;
+}
+
+.navbar a {
+  text-transform: uppercase;
+  color: #030303;
+  font-weight: 700;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar a::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  height: 3px;
+  width: 0px;
+  background: #fab00f;
+  right: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar a::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  height: 3px;
+  width: 0px;
+  background: #fab00f;
+  left: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar a:hover {
+  color: #fab00f;
+}
+
+.navbar a:hover::before {
+  width: 30px;
+}
+
+.navbar a:hover::after {
+  width: 30px;
+}
+
+.banner {
+  padding: 5rem 0;
+}
+/*# sourceMappingURL=style.css.map */

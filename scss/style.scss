@@ -1,0 +1,70 @@
+$black: #030303;
+$red: #f8485d;
+$orange: #fab00f;
+$all_tr: all .5s;
+
+body {
+    background: #fff;
+}
+
+main {
+    margin-top: 104px;
+}
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 0 30px #00000012;
+
+    a {
+        text-transform: uppercase;
+        color: $black;
+        font-weight: 700;
+        position: relative;
+        transition: $all_tr;
+
+        &::before {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            height: 3px;
+            width: 0px;
+            background: $orange;
+            right: 50%;
+            transition: $all_tr;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            height: 3px;
+            width: 0px;
+            background: $orange;
+            left: 50%;
+            transition: $all_tr;
+        }
+
+        &:hover {
+            color: $orange;
+
+            &::before {
+
+                width: 30px;
+            }
+
+            &::after {
+
+                width: 30px;
+            }
+        }
+    }
+}
+
+.banner {
+    padding: 5rem 0;
+}
