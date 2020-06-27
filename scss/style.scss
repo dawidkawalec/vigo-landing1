@@ -1,10 +1,16 @@
 $black: #030303;
 $red: #f8485d;
 $orange: #fab00f;
+$gray: #6C6C6C;
 $all_tr: all .5s;
 
 body {
     background: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1420px;
 }
 
 main {
@@ -14,6 +20,61 @@ main {
 .starter-template {
     padding: 3rem 1.5rem;
     text-align: center;
+}
+
+//marigns
+.mt-30 {
+    margin-top: 30px;
+}
+
+h2 {
+    color: #313131;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+    display: block;
+
+    span {
+        color: $orange;
+        font-weight: 300;
+    }
+
+    &::after {
+        display: inline-block;
+        position: absolute;
+        content: '';
+        bottom: -15px;
+        height: 5px;
+        border-radius: 2.5px;
+        width: 70px;
+        background: $orange;
+        left: calc(50% - 50px);
+        transition: $all_tr;
+    }
+
+    &::before {
+        display: inline-block;
+        position: absolute;
+        content: '';
+        bottom: -15px;
+        height: 5px;
+        border-radius: 2.5px;
+        width: 20px;
+        background: $orange;
+        right: calc(50% - 50px);
+        transition: $all_tr;
+    }
+
+    &:hover {
+        &::after {
+            width: 20px;
+        }
+
+        &::before {
+            width: 70px;
+        }
+    }
 }
 
 .navbar {
@@ -65,6 +126,228 @@ main {
     }
 }
 
+.cta {
+    background: $red;
+    color: #fff;
+    padding: 1em 2em;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    display: inline-block;
+    transition: $all_tr;
+
+    &:hover {
+        color: #fff;
+        background: $orange;
+        text-decoration: none;
+    }
+}
+
+.gray {
+    background: #FCFCFC;
+}
+
+.orange {
+    background: $orange;
+    color: #fff;
+
+    h2 {
+        text-align: left;
+        color: #fff;
+
+        &::before {
+            background: #fff;
+            right: calc(100% - 100px);
+        }
+
+        &::after {
+            background: #fff;
+            left: 0;
+        }
+    }
+
+    p {
+        font-weight: 200;
+
+        strong {
+            font-weight: 600;
+        }
+    }
+
+    a {
+        background: #fff;
+        color: #313131;
+
+        &:hover {
+            background: $red;
+        }
+    }
+}
+
 .banner {
+    padding: 7rem 0 12rem 0;
+    background: url(/img/hero-bg.jpg) center top no-repeat;
+    background-size: cover;
+    width: 96%;
+    display: block;
+    margin: 0 auto;
+
+    h1 {
+        color: $red;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+        color: $gray;
+    }
+}
+
+.offer-boxes {
+    margin-top: -7rem;
+
+    .offer-box {
+        background: #fff;
+        text-align: center;
+        box-shadow: 0 0 44px rgba(0, 0, 0, 0.08);
+        padding: 2em 1em;
+        height: 100%;
+        position: relative;
+        transition: $all_tr;
+        z-index: 4;
+
+        p {
+            margin: 0;
+            color: #313131;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+        }
+
+        &:hover {
+            box-shadow: 0 0 44px rgba(0, 0, 0, 0.28);
+            transform: scale(1.1);
+            z-index: 5;
+            cursor: pointer;
+
+            img {
+                filter: invert(41%) sepia(80%) saturate(1790%) hue-rotate(324deg) brightness(95%) contrast(104%);
+            }
+        }
+    }
+}
+
+.products {
+    margin: 5rem 0;
+}
+
+//filrowanie//
+.filters ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 30px 0px;
+    padding: 1em;
+    background: #fafafa;
+}
+
+.filters ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 2rem;
+    padding: 0 5px 8px 5px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: -2px;
+    color: #777;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.filters ul li:hover {
+    color: $orange;
+}
+
+.filters ul li.is-checked {
+    border-bottom: 2px solid $orange;
+    color: $orange;
+}
+
+.filters ul li:last-child {
+    margin-right: 0;
+}
+
+
+.grid .grid-item h1 {
+    background: #EEEEEE;
+    height: 150px;
+    line-height: 150px;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about {
+    padding: 5rem 0;
+    width: 96%;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+
+    .about-img-holder {
+        position: absolute;
+        left: 50%;
+        right: 0;
+        content: '';
+        background: url(/img/produkty.png) center center no-repeat;
+        background-size: contain;
+        background-color: #fff;
+        top: 0;
+        bottom: 0;
+        margin: 15px;
+        border-radius: 15px;
+        min-height: 300px;
+    }
+}
+
+.other-products {
+    padding: 5rem 0;
+}
+
+.refs {
+    padding: 5rem 0;
+
+    .ref-item {
+        background: #fff;
+        box-shadow: 0 0 46px rgba(0, 0, 0, 0.04);
+        padding: 2em;
+
+        h3.name {
+            font-weight: 700;
+            color: #25221C;
+            margin: .2em 0 .7em 0;
+        }
+
+        p {
+            padding-left: 30px;
+            position: relative;
+            margin: 0;
+
+            &::before {
+                content: url(/img/quote.svg);
+                position: absolute;
+                left: 0;
+                top: 5px;
+            }
+        }
+    }
+}
+
+.clients {
     padding: 5rem 0;
 }
