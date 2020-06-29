@@ -11,15 +11,16 @@
   <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <!-- Custom styles for this template -->
-  <link href="/scss/style.css" rel="stylesheet">
+  <link href="../scss/style.css" rel="stylesheet">
 
 </head>
 
 <body>
 
 
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg bg-light fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" alt="">
@@ -31,10 +32,10 @@
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Przejdź do sklepu</a>
+          <li class="nav-item nav-sklep">
+            <a class="nav-link " href="#">Przejdź do sklepu</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-b2b">
             <a class="nav-link" href="#">Rozpocznij współpracę b2b</a>
           </li>
         </ul>
@@ -117,40 +118,171 @@
             <div class="row grid data-isotope='{ " itemSelector": ".grid-item" , "masonry" : { "columnWidth" : 200 }
               }'">
               <div class="col-md-3 grid-item bio" data-category="bio">
-                <h1>1</h1>
+                <div class="product-card">
+                  <div class="img-holder">
+                    <img src="/img/produkty/folia-aluminiowa.png" alt="">
+                  </div>
+                  <p class="nrkat">7511020</p>
+                  <h4>Folia aluminiowa 20m</h4>
+                  <p class="price">
+                    4,99 zł
+                  </p>
+                  <a href="" class="cta"> Zobacz w sklepie</a>
+                </div>
               </div>
+
               <div class="col-md-3 grid-item premium" data-category="premium">
-                <h1>2</h1>
+                <div class="product-card">
+                  <div class="img-holder">
+                    <img src="/img/produkty/folia-aluminiowa.png" alt="">
+                  </div>
+                  <p class="nrkat">7511020</p>
+                  <h4>Folia aluminiowa 20m</h4>
+                  <p class="price">
+                    4,99 zł
+                  </p>
+                  <a href="" class="cta"> Zobacz w sklepie</a>
+                </div>
               </div>
+
               <div class="col-md-3 grid-item standard" data-category="standard">
-                <h1>3</h1>
+                <div class="product-card">
+                  <div class="img-holder">
+                    <img src="/img/produkty/rekaw-do-pieczenia.png" alt="">
+                  </div>
+                  <p class="nrkat">7511020</p>
+                  <h4>Rękaw do pieczenia 3m</h4>
+                  <p class="price">
+                    5,99 zł
+                  </p>
+                  <a href="" class="cta"> Zobacz w sklepie</a>
+                </div>
               </div>
+
               <div class="col-md-3 grid-item bio" data-category="bio">
-                <h1>4</h1>
+                <div class="product-card">
+                  <div class="img-holder">
+                    <img src="/img/produkty/woreczki-do-pieczenia.png" alt="">
+                  </div>
+                  <p class="nrkat">7511020</p>
+                  <h4>Woreczki do pieczenia rozmiar S,M,L,XL - 10 sztuk</h4>
+                  <p class="price">
+                    6,99 zł
+                  </p>
+                  <a href="" class="cta"> Zobacz w sklepie</a>
+                </div>
               </div>
+
               <div class="col-md-3 grid-item bio" data-category="bio">
-                <h1>5</h1>
+                <div class="product-card">
+                  <div class="img-holder">
+                    <img src="/img/produkty/folia-aluminiowa.png" alt="">
+                  </div>
+                  <p class="nrkat">7511020</p>
+                  <h4>Folia aluminiowa 20m</h4>
+                  <p class="price">
+                    4,99 zł
+                  </p>
+                  <a href="" class="cta"> Zobacz w sklepie</a>
+                </div>
               </div>
+
               <div class="col-md-3 grid-item premium" data-category="premium">
-                <h1>6</h1>
+                <div class="product-card">
+                  <div class="img-holder">
+                    <img src="/img/produkty/folia-aluminiowa.png" alt="">
+                  </div>
+                  <p class="nrkat">7511020</p>
+                  <h4>Folia aluminiowa 20m</h4>
+                  <p class="price">
+                    4,99 zł
+                  </p>
+                  <a href="" class="cta"> Zobacz w sklepie</a>
+                </div>
               </div>
+
               <div class="col-md-3 grid-item standard" data-category="standard">
-                <h1>7</h1>
+                <div class="product-card">
+                  <div class="img-holder">
+                    <img src="/img/produkty/rekaw-do-pieczenia.png" alt="">
+                  </div>
+                  <p class="nrkat">7511020</p>
+                  <h4>Rękaw do pieczenia 3m</h4>
+                  <p class="price">
+                    5,99 zł
+                  </p>
+                  <a href="" class="cta"> Zobacz w sklepie</a>
+                </div>
               </div>
+
               <div class="col-md-3 grid-item bio" data-category="bio">
-                <h1>8</h1>
+                <div class="product-card">
+                  <div class="img-holder">
+                    <img src="/img/produkty/woreczki-do-pieczenia.png" alt="">
+                  </div>
+                  <p class="nrkat">7511020</p>
+                  <h4>Woreczki do pieczenia rozmiar S,M,L,XL - 10 sztuk</h4>
+                  <p class="price">
+                    6,99 zł
+                  </p>
+                  <a href="" class="cta"> Zobacz w sklepie</a>
+                </div>
               </div>
+
               <div class="col-md-3 grid-item bio" data-category="bio">
-                <h1>9</h1>
+                <div class="product-card">
+                  <div class="img-holder">
+                    <img src="/img/produkty/folia-aluminiowa.png" alt="">
+                  </div>
+                  <p class="nrkat">7511020</p>
+                  <h4>Folia aluminiowa 20m</h4>
+                  <p class="price">
+                    4,99 zł
+                  </p>
+                  <a href="" class="cta"> Zobacz w sklepie</a>
+                </div>
               </div>
+
               <div class="col-md-3 grid-item premium" data-category="premium">
-                <h1>10</h1>
+                <div class="product-card">
+                  <div class="img-holder">
+                    <img src="/img/produkty/folia-aluminiowa.png" alt="">
+                  </div>
+                  <p class="nrkat">7511020</p>
+                  <h4>Folia aluminiowa 20m</h4>
+                  <p class="price">
+                    4,99 zł
+                  </p>
+                  <a href="" class="cta"> Zobacz w sklepie</a>
+                </div>
               </div>
+
               <div class="col-md-3 grid-item standard" data-category="standard">
-                <h1>11</h1>
+                <div class="product-card">
+                  <div class="img-holder">
+                    <img src="/img/produkty/rekaw-do-pieczenia.png" alt="">
+                  </div>
+                  <p class="nrkat">7511020</p>
+                  <h4>Rękaw do pieczenia 3m</h4>
+                  <p class="price">
+                    5,99 zł
+                  </p>
+                  <a href="" class="cta"> Zobacz w sklepie</a>
+                </div>
               </div>
+
               <div class="col-md-3 grid-item bio" data-category="bio">
-                <h1>12</h1>
+                <div class="product-card">
+                  <div class="img-holder">
+                    <img src="/img/produkty/woreczki-do-pieczenia.png" alt="">
+                  </div>
+                  <p class="nrkat">7511020</p>
+                  <h4>Woreczki do pieczenia rozmiar S,M,L,XL - 10 sztuk</h4>
+                  <p class="price">
+                    6,99 zł
+                  </p>
+                  <a href="" class="cta"> Zobacz w sklepie</a>
+                </div>
               </div>
 
             </div>
@@ -345,18 +477,210 @@
             <h2>Marki z którymi <span>współpracujemy</span></h2>
           </div>
           <div class="col-md-12">
+            <!-- Swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="logo-car"><img src="/img/logos/auchan.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="logo-car"><img src="/img/logos/auchan.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="logo-car"><img src="/img/logos/auchan.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="logo-car"><img src="/img/logos/auchan.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="logo-car"><img src="/img/logos/auchan.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="logo-car"><img src="/img/logos/auchan.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="logo-car"><img src="/img/logos/auchan.png" alt=""></div>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
 
           </div>
 
         </div>
       </div>
     </section>
-    <!-- Initialize Swiper -->
-    <script>
 
-    </script>
+    <section class="contact gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-md-7">
+                <h2>Zostań partnerem vi-GO!</h2>
+                <p>Chcesz dołączyć do zespołu Vi-GO! i zostać naszym przedstawicielem?</p>
+                <p>Skontaktuj się z nami!</p>
+              </div>
+              <div class="col-md-5"></div>
+            </div>
+
+            <div class="contact-info">
+              <h3>Infolinia</h3>
+              <p>Pon - Pt 8-16</p>
+              <div class="row">
+                <div class="col-md-4">
+                  <p class="adres">Jędrzejów 28-300<br>
+                    ul. Przemysłowa 47</p>
+                </div>
+                <div class="col-md-4">
+                  <p class="tel">+48 602 420 300</p>
+                </div>
+                <div class="col-md-4">
+                  <p class="mail">zamowienia@vi-go.eu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5"></div>
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5045430.752895086!2d14.64990733571791!3d51.868455955864704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47009964a4640bbb%3A0x97573ca49cc55ea!2sPolska!5e0!3m2!1spl!2spl!4v1593415611667!5m2!1spl!2spl"
+            width="800" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <h3>Newsletter</h3>
+            <p>Zapisz się do newslettera, a otrzymasz od nas informacje o nowościach i promocjach.</p>
+          </div>
+          <div class="col-lg-5"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-md-6">
+            <h3>Informacja</h3>
+            <ul>
+              <li>
+                <a href="#">Promocje</a>
+              </li>
+              <li>
+                <a href="#">Nowe produkty</a>
+              </li>
+              <li>
+                <a href="#">Najczęściej kupowane</a>
+              </li>
+              <li>
+                <a href="#">Regulamin</a>
+              </li>
+              <li>
+                <a href="#">Polityka prywatności</a>
+              </li>
+              <li>
+                <a href="#">Odstąpienie od umowy</a>
+              </li>
+              <li>
+                <a href="#">Mapa strony</a>
+              </li>
+              <li>
+                <a href="#">Portal dostawców</a>
+              </li>
+              <li>
+                <a href="#">Portal pracowniczy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h3>Kategorie</h3>
+            <ul>
+              <li>
+                <a href="#">Perfect picnic</a>
+              </li>
+              <li>
+                <a href="#">Perfect kitchen</a>
+              </li>
+              <li>
+                <a href="#">Perfect cleaning</a>
+              </li>
+              <li>
+                <a href="#">Produkty bio</a>
+              </li>
+              <li>
+                <a href="#">Premium number one</a>
+              </li>
+              <br>
+              <li>
+                <a href="#">Kontakt</a>
+              </li>
+              <li>
+                <a href="#">Zostań partnerem vigo!</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h3>Moje konto</h3>
+            <ul>
+              <li>
+                <a href="#">Moje zamówienia</a>
+              </li>
+              <li>
+                <a href="#">Moje rachunki</a>
+              </li>
+              <li>
+                <a href="#">Moje adresy</a>
+              </li>
+              <li>
+                <a href="#">Moje informacje osobiste</a>
+              </li>
+              <li>
+                <a href="#">Moje bony</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h3>Informacja o sklepie</h3>
+            <h4>Kontakt do sklepu</h4>
+            <p class="tel"><strong><a href="tel:+48 723 300 255">+48 723 300 255</a></strong><br>
+              Pon - Pt 9:00 - 16:00</p>
+            <p class="mail"><strong><a href="mailto:zamowienia@vi-go.eu">zamowienia@vi-go.eu</a></strong><br>
+              Pon - Pt 8:00 - 16:00</p>
+            <h4>Kontakt do firmy Quickpack</h4>
+            <p class="tel"><strong><a href="tel:+48 413 865 900">+48 413 865 900</a></strong><br>
+              Pon - Pt 9:00 - 16:00</p>
+            <p class="adres"><strong>Przemysłowa 47,<br>
+                28-300 Jędrzejów, Poland</strong></p>
+          </div>
+    </section>
+    <footer>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-4">
+            <p>© 2020 - vi-Go - All rights reserved</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <img src="/img/fb.png" alt="">
+            <img src="/img/youtube-logo.svg" alt="">
+            <img src="/img/insta.svg" alt="">
+          </div>
+          <div class="col-lg-4">
+            <a href="#">Quickpack.de</a>
+            <a href="#">Quickpack.pl</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </main><!-- /.container -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
@@ -365,7 +689,20 @@
   </script>
   <script src="../assets/dist/js/bootstrap.bundle.js"></script>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
   <script src="../assets/js/script.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 6,
+      spaceBetween: 30,
+      //centeredSlides: true,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 
 </html>
