@@ -706,6 +706,7 @@ footer {
 
 footer a {
   color: #B0B0B0;
+  margin: 0 10px;
 }
 
 footer p {
@@ -715,12 +716,6 @@ footer p {
 footer img {
   max-height: 20px;
   margin: 0 10px;
-}
-
-footer a {
-  text-align: right;
-  float: right;
-  margin-left: 40px;
 }
 
 .product-card {
