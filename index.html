@@ -27,7 +27,11 @@
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
         aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <div class="menu-toggle burger">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </div>
       </button>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
@@ -693,10 +697,18 @@
   <script src="../assets/js/script.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 6,
       spaceBetween: 30,
+      slidesPerView: 2,
       //centeredSlides: true,
       loop: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 6,
+        },
+      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,

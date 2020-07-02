@@ -16,3 +16,8 @@ $buttonGroup.on('click', 'li', function (event) {
         filter: filterValue
     });
 });
+
+$('.menu-toggle').on('click', function () {
+    $(this).toggleClass('burger times');
+    $('.site-header').css("background-color", "white");
+});

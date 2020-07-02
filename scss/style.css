@@ -1,3 +1,84 @@
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.menu-toggle {
+  width: 30px;
+  position: absolute;
+  top: 45px;
+  right: 5px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.menu-toggle span {
+  width: 100%;
+  height: 2px;
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  background: #f8485d;
+}
+
+.menu-toggle span:last-of-type {
+  width: 75%;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.menu-toggle.burger span.top {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.menu-toggle.burger span.middle {
+  width: 100%;
+  opacity: 1;
+  -webkit-transform: translatex(0);
+          transform: translatex(0);
+  -webkit-transition: all 0.3s ease-out .3s;
+  transition: all 0.3s ease-out .3s;
+}
+
+.menu-toggle.burger span.bottom {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.menu-toggle.times span.top {
+  -webkit-transform: rotate(45deg) translate(5px, 10px);
+          transform: rotate(45deg) translate(5px, 10px);
+  -webkit-transition: -webkit-transform .3s ease-out .3s;
+  transition: -webkit-transform .3s ease-out .3s;
+  transition: transform .3s ease-out .3s;
+  transition: transform .3s ease-out .3s, -webkit-transform .3s ease-out .3s;
+}
+
+.menu-toggle.times span.middle {
+  width: 0%;
+  opacity: 0;
+  -webkit-transform: translatex(-10px);
+          transform: translatex(-10px);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.menu-toggle.times span:last-of-type.bottom {
+  -webkit-transform: rotate(-45deg) translate(0px, -5px);
+          transform: rotate(-45deg) translate(0px, -5px);
+  -webkit-transition: all .3s ease-out .3s;
+  transition: all .3s ease-out .3s;
+  width: 100%;
+}
+
 body {
   background: #fff;
   font-family: 'Roboto', sans-serif;
@@ -290,13 +371,14 @@ h2:hover::before {
   margin: 30px 0px;
   padding: 1em;
   background: #fafafa;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .filters ul li {
   display: inline-block;
   text-align: center;
-  margin: 0 2rem;
-  padding: 0 5px 8px 5px;
+  padding: .5rem 1rem;
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
@@ -666,6 +748,7 @@ footer a {
 .product-card .img-holder img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .product-card p.nrkat {
@@ -682,12 +765,17 @@ footer a {
   font-weight: 600;
   font-size: 1.2rem;
   height: 80px;
+  position: relative;
+  z-index: 1;
 }
 
 .product-card p.price {
   color: #fab00f;
   font-weight: 700;
   font-size: 1.8rem;
+  position: relative;
+  z-index: 2;
+  background: #fcfcfc;
 }
 
 .product-card a.cta {
@@ -705,5 +793,34 @@ footer a {
 .product-card:hover a.cta {
   background: #fab00f;
   color: #fff;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    padding-left: 30px;
+  }
+  .navbar-nav .nav-item {
+    padding-left: 15px;
+  }
+  .about .about-img-holder {
+    position: initial;
+  }
+  .contact .google-map {
+    position: initial;
+    height: 400px;
+    margin-top: 2em;
+  }
+  footer {
+    text-align: center;
+  }
+  footer img {
+    margin: 10px 10px;
+  }
+  footer a {
+    text-align: center;
+    float: unset;
+    margin-left: 0;
+    margin: 5px 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
